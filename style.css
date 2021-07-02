@@ -29,23 +29,42 @@
     box-sizing: border-box;
     height: 80px;
 }
+.lista {
+    background-color: rgb(196, 0, 0);
+    width: 100px;
+    z-index: 1;
+}
+.lista li{
+    height: 80px;
+ 
+    list-style: none;
+}
+.lista li :hover{
+    background-color: grey;
+}
 .informacion > li {
     list-style: none;
     font-family: 'Noto Sans JP', sans-serif;
     margin-left: 3%;
     box-sizing: border-box;
     display: flex;
+    padding-top: 30px;
     align-items: center;
+    flex-direction: column;
     font-size: 14px;
+}
+.informacion .lista{
+    display: flex;
+    flex-direction: column;
 }
 .informacion > li:hover{
     box-sizing: border-box;
     border-bottom:2px solid rgb(248, 48, 82);
 }
-.informacion ul {
+.informacion .lista {
     display: none;
 }
-.informacion li:hover > ul{
+.informacion li:hover > .lista{
     display: block;
 }
 .jugar{
@@ -56,12 +75,19 @@
     width: 80%;
     font-size: 12px;
     height: 40px;
+    margin-left: -50px;
     border-radius: 2px;
     background-color: rgb(248, 48, 82);
     color: white;
     font-family: 'Noto Sans JP', sans-serif;
-    border: rgb(248, 48, 82);;
+    border: rgb(248, 48, 82);
 }
+
+.video_container {
+    position: relative;
+    height: 100%;
+}
+
 
 
 .trailer{
@@ -70,28 +96,37 @@
 }
 .absolute{
     width: 100%;
-    height: 410px;
+    height: 310px;
     position: absolute;
-    top: 100px;
+    top: 300px;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content:center ;
-    box-sizing: border-box;
 }
 .absolute p{
-    color: rgb(245, 230, 202);
-    width: 50%;
-    height: 75px;
+    color: rgb(255, 248, 234);
+    width: 70%;
+    margin: 0;
+    position: absolute;
+    left: 40%;
+    top: -30%;
+    box-sizing: border-box;
+    height: 100px;
+    padding-top: 100px;
+    box-sizing: border-box;
+}
+.absolute img{
+
+    margin-left: 50px;
 }
 .absolute button{
     color: white;
-    width: 5%;
+    width: 150%;
     height: 50px;
+    margin-left: -50%;
+    border-radius: 2px;
     background-color: rgb(248, 48, 82);
+    border: rgb(248, 48, 82);
+    font-family: 'Noto Sans JP', sans-serif;
 }
-.video_container {
-    position: relative;
-    height: 100%;
-}
-
