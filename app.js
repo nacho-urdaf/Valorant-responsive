@@ -1,5 +1,11 @@
 let button = document.querySelector("#menu_button");
 
+let button1 = document.querySelector("#menu_button1");
+
+let button2 = document.querySelector("#menu_button2");
+
+let button3 = document.querySelector("#menu_button3");
+
 let menu = document.querySelector("#menu");
 
 let cerrar = document.querySelector("#menu_button_close");
@@ -29,11 +35,25 @@ function togglesubmenub(){
 }
 function togglesubmenuc(){
     submenuc.classList.toggle("open")
+}
 
+function closeAll (){
+    menu.classList.remove('open')
+    submenu.classList.remove('open')
+    submenub.classList.remove('open')
+    submenuc.classList.remove('open')
 }
 
 button.onclick = toggleMenu
-cerrar.onclick = toggleMenu
+
+//CERRAR
+button1.onclick = closeAll
+button2.onclick = closeAll
+button3.onclick = closeAll
+cerrar.onclick = closeAll
+
 second.onclick = togglesubmenu
 secondb.onclick = togglesubmenub
 secondc.onclick = togglesubmenuc
+
+//go back
