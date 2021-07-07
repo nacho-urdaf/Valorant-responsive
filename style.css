@@ -15,7 +15,9 @@ header {
   justify-content: space-between;
   color: white;
 }
-
+.informacione {
+  display: none;
+}
 .imagenes {
   width: 15%;
 }
@@ -95,6 +97,7 @@ header {
 .video_container {
   position: relative;
 }
+
 .trailer .video_container video {
   width: 100%;
 }
@@ -269,5 +272,15 @@ p {
   }
   .imagenvalorant {
     display: block;
+  }
+  .informacione {
+    display: block;
+  }
+  .video_container {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
   }
 }

@@ -8,6 +8,12 @@ let button3 = document.querySelector("#menu_button3");
 
 let menu = document.querySelector("#menu");
 
+let go_back = document.querySelector("#go_back");
+
+let go_back2 = document.querySelector("#go_back2");
+
+let go_back3 = document.querySelector("#go_back3");
+
 let cerrar = document.querySelector("#menu_button_close");
 
 let second =  document.querySelector("#second_menu"); 
@@ -55,5 +61,10 @@ cerrar.onclick = closeAll
 second.onclick = togglesubmenu
 secondb.onclick = togglesubmenub
 secondc.onclick = togglesubmenuc
+
+
+go_back.onclick = togglesubmenu
+go_back2.onclick = togglesubmenub
+go_back3.onclick = togglesubmenuc
 
 //go back
